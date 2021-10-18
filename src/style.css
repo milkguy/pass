@@ -1,0 +1,148 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgba(47, 99, 164, 0.05);
+}
+#bumen {
+  display: flex;
+  align-items: center;
+  background: white;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 36px;
+}
+#bumen > img {
+  height: 18px;
+  width: 18px;
+  margin-left: 10px;
+}
+#bumen > #bumen_1 {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+}
+#bumen > #bumen_1 > p {
+  display: block;
+  font-size: 13px;
+}
+select {
+  width: 60vw;
+  font-size: 13px;
+  border: none;
+  background-color: transparent;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-left: 5px;
+}
+#qingjia {
+  display: flex;
+  align-items: center;
+  background: white;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 36px;
+}
+#qingjia > img {
+  height: 18px;
+  width: 18px;
+  margin-left: 10px;
+}
+#qingjia > #chaxun > p {
+  font-size: 13px;
+  margin-left: 10px;
+}
+#name,
+#xueyuan,
+#zhuangtaima,
+#zhuangtai,
+#xuegonghao,
+#time {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+#name > p,
+#xueyuan > p,
+#zhuangtaima > p,
+#zhuangtai > p,
+#xuegonghao > p,
+#time > p {
+  font-size: 14px;
+  margin-left: 20px;
+  color: rgb(135, 135, 135);
+}
+#nameinput,
+#xueyuaninput,
+#zhuangtaixinxi,
+#xuegonghaoinput,
+#churuxiaotime {
+  height: 45px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#nameinput > input,
+#xueyuaninput > input,
+#xuegonghaoinput > input {
+  width: 50vw;
+  text-align: center;
+  height: 30px;
+  font-size: 100%;
+  border: none;
+  outline: medium;
+  font-size: 14px;
+  font-family: 微软雅黑;
+  font-weight: normal;
+  font-style: normal;
+  color: rgb(96, 98, 102);
+  text-decoration: none;
+  text-align: center;
+  line-height: 15px;
+  letter-spacing: 0px;
+}
+#shanyao {
+  height: 68px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+#erweima {
+  background: white;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#zhuangtaixinxi > p {
+  font-size: 18px;
+  font-family: 微软雅黑;
+  font-weight: bold;
+  font-style: normal;
+  color: rgb(0, 120, 20);
+  text-decoration: none;
+  text-align: center;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+#churuxiaotime {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+#churuxiaotime > p {
+  font-size: 14px;
+  font-family: 微软雅黑;
+  font-weight: normal;
+  font-style: normal;
+  color: rgb(96, 98, 102);
+} */

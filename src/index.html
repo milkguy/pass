@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>请假外出、返校权限通行码</title>
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgba(47, 99, 164, 0.05);
+}
+#bumen {
+  display: flex;
+  align-items: center;
+  background: white;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 36px;
+}
+#bumen > img {
+  height: 18px;
+  width: 18px;
+  margin-left: 10px;
+}
+#bumen > #bumen_1 {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+}
+#bumen > #bumen_1 > p {
+  display: block;
+  font-size: 13px;
+}
+select {
+  width: 60vw;
+  font-size: 13px;
+  border: none;
+  background-color: transparent;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-left: 5px;
+}
+#qingjia {
+  display: flex;
+  align-items: center;
+  background: white;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 36px;
+}
+#qingjia > img {
+  height: 18px;
+  width: 18px;
+  margin-left: 10px;
+}
+#qingjia > #chaxun > p {
+  font-size: 13px;
+  margin-left: 10px;
+}
+#name,
+#xueyuan,
+#zhuangtaima,
+#zhuangtai,
+#xuegonghao,
+#time {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+#name > p,
+#xueyuan > p,
+#zhuangtaima > p,
+#zhuangtai > p,
+#xuegonghao > p,
+#time > p {
+  font-size: 14px;
+  margin-left: 20px;
+  color: rgb(135, 135, 135);
+}
+#nameinput,
+#xueyuaninput,
+#zhuangtaixinxi,
+#xuegonghaoinput,
+#churuxiaotime {
+  height: 45px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#nameinput > input,
+#xueyuaninput > input,
+#xuegonghaoinput > input {
+  width: 50vw;
+  text-align: center;
+  height: 30px;
+  font-size: 100%;
+  border: none;
+  outline: medium;
+  font-size: 14px;
+  font-family: 微软雅黑;
+  font-weight: normal;
+  font-style: normal;
+  color: rgb(96, 98, 102);
+  text-decoration: none;
+  text-align: center;
+  line-height: 15px;
+  letter-spacing: 0px;
+}
+#shanyao {
+  height: 68px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+#erweima {
+  background: white;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#zhuangtaixinxi > p {
+  font-size: 18px;
+  font-family: 微软雅黑;
+  font-weight: bold;
+  font-style: normal;
+  color: rgb(0, 120, 20);
+  text-decoration: none;
+  text-align: center;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+#churuxiaotime {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+#churuxiaotime > p {
+  font-size: 14px;
+  font-family: 微软雅黑;
+  font-weight: normal;
+  font-style: normal;
+  color: rgb(96, 98, 102);
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="bumen">
+      <img src="http://152.136.136.158:5000/static/gate_files/%E6%B5%81%E7%A8%8B.svg" alt="" />
+      <div id="bumen_1">
+        <p>当前部门:</p>
+      </div>
+      <div id="bumen_2">
+        <select name="" id="pet-select">
+          <option value="信息与通信工程学院">信息与通信工程学院</option>
+          <option value="电子工程学院">电子工程学院</option>
+          <option value="计算机学院(国家示范软件学院)">计算机学院(国家示范软件学院)</option>
+          <option value="网络空间安全学院">网络空间安全学院</option>
+          <option value="人工智能学院">人工智能学院</option>
+          <option value="现代邮政学院(自动化学院)">现代邮政学院(自动化学院)</option>
+          <option value="经济管理学院">经济管理学院</option>
+          <option value="理学院">理学院</option>
+          <option value="人文学院">人文学院</option>
+          <option value="数字媒体与设计艺术学院">数字媒体与设计艺术学院</option>
+          <option value="马克思主义学院">马克思主义学院</option>
+          <option value="国际学院">国际学院</option>
+          <option value="应急管理学院">应急管理学院</option>
+          <option value="网络教育学院（继续教育学院）">网络教育学院（继续教育学院）</option>
+          <option value="体育部">体育部</option>
+        </select>
+      </div>
+    </div>
+    <div id="qingjia">
+      <img src="http://152.136.136.158:5000/static/gate_files/%E8%A1%A8%E5%8D%95.svg" alt="" />
+      <div id="chaxun">
+        <p>请假外出、返校权限查询</p>
+      </div>
+    </div>
+    <div id="name">
+      <p>姓名</p>
+    </div>
+    <div id="nameinput">
+      <input id="text" type="text"value=""/><br />
+    </div>
+    <div id="xueyuan">
+      <p>学院</p>
+    </div>
+    <div id="xueyuaninput">
+      <input type="text" name="" id="" value="" />
+    </div>
+
+    <div id="shanyao">
+      <div id="box" style="height: 40px; width: 90vw"></div>
+    </div>
+
+    <div id="zhuangtaima">
+      <p>状态码</p>
+    </div>
+    <div id="erweima">
+      <div id="qrcode"></div>
+    </div>
+    <div id="zhuangtai">
+      <p>状态</p>
+    </div>
+    <div id="zhuangtaixinxi">
+      <p>允许入校</p>
+    </div>
+    <div id="xuegonghao">
+      <p>学工号</p>
+    </div>
+    <div id="xuegonghaoinput">
+      <input type="text" name="" id="" value="" />
+    </div>
+    <div id="time">
+      <p>出入校时间</p>
+    </div>
+    <div id="churuxiaotime">
+      <p id="nowtime"></p>
+    </div>
+    <script
+      type="text/javascript"
+      src="//cdn.staticfile.org/jquery/2.1.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//static.runoob.com/assets/qrcode/qrcode.min.js"
+    ></script>
+
+      
+     
+
+      <script type="text/javascript">
+        // 声明一个二维码对象，并设置宽高
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+          width: 150,
+          height: 150,
+          colorDark: "#50b133", //二维码线条颜色
+          colorLight: "#ffffff", //二维码背景颜色
+        });
+        // 生成二维码的函数
+        function makeCode() {
+          var elText = document.getElementById("text");
+          // 网址为空，使用弹框提示
+
+          // 生成二维码
+          qrcode.makeCode(elText.value);
+        }
+
+        makeCode();
+        // 绑定事件 blur当输入域失去焦点 (blur) 时改变其颜色并且生成二维码
+        $("#text")
+          .on("blur", function () {
+            makeCode();
+            // 绑定事件 当回车键按下时生成二维码
+          })
+          .on("keydown", function (e) {
+            if (e.keyCode == 13) {
+              makeCode();
+            }
+          });
+      </script>
+      
+    </body>
+
+    <script src="main.js"></script>
+    <script>
+      var myDate = new Date()
+      let time=document.querySelector("#nowtime").innerHTML= myDate.toLocaleString()
+    </script>
+    <script>
+      let select=document.querySelector("#pet-select");
+    </script>
+
+  </body>
+</html>
